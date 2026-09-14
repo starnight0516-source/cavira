@@ -2,12 +2,13 @@
 (()=>{
   const meta=window.CAVIRA_COMMUNITY_META||{};
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const OFFICIAL_CAVIRA_IMAGE='assets/cavira-official.webp';
 
   if(typeof icons!=='undefined' && typeof CATEGORIES!=='undefined'){
     while(icons.length<CATEGORIES.length) icons.push(icons.length===CATEGORIES.length-1?'🛠':'•');
   }
   if(typeof scenes!=='undefined'){
-    scenes['車友實測與排除']={image:'illustration-screen.webp',alt:'CAVIRA 車友問題排除與車機檢查情境插畫',label:'車友實測與排除'};
+    scenes['車友實測與排除']={image:OFFICIAL_CAVIRA_IMAGE,alt:'FOXTRON CAVIRA 官方車款圖片',label:'車友實測與排除'};
   }
 
   function toneLabel(tone){
@@ -77,6 +78,16 @@
     document.querySelectorAll('[data-v2-query]').forEach(b=>b.onclick=()=>{
       query=b.dataset.v2Query; view='topics'; category='全部重點'; const s=document.getElementById('search'); if(s)s.value=query; render();
       document.getElementById('results')?.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  }
+
+  /* Scheme A: every category illustration uses the same official CAVIRA image supplied by the site owner. */
+  if(typeof scenes!=='undefined'){
+    Object.values(scenes).forEach(scene=>{
+      if(scene&&typeof scene==='object'){
+        scene.image=OFFICIAL_CAVIRA_IMAGE;
+        scene.alt='FOXTRON CAVIRA 官方車款圖片';
+      }
     });
   }
 

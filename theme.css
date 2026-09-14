@@ -1,0 +1,188 @@
+/* CAVIRA Owner Guide — brighter reading theme, 2026-09-14 */
+:root{
+  font-size:18px;
+  --blue:#1768e5;
+  --blue-strong:#0f55c8;
+  --ink:#17324d;
+  --muted:#5a7088;
+  --line:#cfdeec;
+  --mint:#e8f8f4;
+  --sky:#eaf4ff;
+  --warm:#fff6dc;
+  --lavender:#f2efff;
+}
+
+body{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 8% 8%,rgba(71,190,255,.18),transparent 26%),
+    radial-gradient(circle at 92% 16%,rgba(89,222,178,.18),transparent 24%),
+    radial-gradient(circle at 82% 92%,rgba(255,201,92,.15),transparent 24%),
+    linear-gradient(135deg,#f4faff 0%,#f7fffc 50%,#fffaf0 100%);
+}
+
+header{
+  background:linear-gradient(120deg,#102c4c 0%,#155ab5 58%,#2384d8 100%);
+  box-shadow:0 5px 22px rgba(24,71,117,.18);
+}
+
+.brand{font-size:27px}
+.brand small{font-size:14px;color:#dcecff}
+.header-right{font-size:15px;color:#e5f1ff}
+.outline{
+  border-color:rgba(255,255,255,.48);
+  background:rgba(255,255,255,.08);
+  font-size:15px;
+  font-weight:700;
+}
+.outline:hover{background:rgba(255,255,255,.16)}
+
+.layout{background:rgba(255,255,255,.18)}
+aside{
+  background:linear-gradient(180deg,#f1f8ff 0%,#effbf8 56%,#fff9e9 100%);
+  border-right-color:#c8dbea;
+}
+.aside-label,.eyebrow{font-size:13px}
+nav button{
+  font-size:16px;
+  padding:14px 16px;
+  border-radius:11px;
+}
+nav button.active{
+  background:linear-gradient(100deg,#dcecff,#e5f9f3);
+  color:var(--blue-strong);
+  box-shadow:inset 3px 0 0 var(--blue);
+}
+nav button:hover{background:#e6f2fb}
+.sourcebox b{font-size:18px}
+.sourcebox p{font-size:15px}
+.sourcebox small{font-size:14px}
+.source-link{font-size:15px;font-weight:700}
+
+main{padding-top:40px}
+h1{
+  font-size:38px;
+  color:#153f68;
+  letter-spacing:.01em;
+}
+.intro p{font-size:17px;color:#60758b}
+.pagecount b{font-size:42px;color:#1b5d91}
+.pagecount span{font-size:14px}
+
+.searchbox{
+  min-height:68px;
+  border:1px solid #9fc4e8;
+  border-radius:15px;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 8px 24px rgba(38,93,145,.10);
+}
+.searchbox input{font-size:19px;padding:20px 0}
+.searchbox:focus-within{box-shadow:0 0 0 4px rgba(23,104,229,.14),0 8px 24px rgba(38,93,145,.10)}
+
+.popular{font-size:14px;gap:10px}
+.popular span{font-weight:700}
+.popular button{
+  font-size:15px;
+  font-weight:650;
+  padding:8px 13px;
+  border-radius:999px;
+  border-color:#c9dcec;
+  background:rgba(255,255,255,.9);
+  box-shadow:0 2px 8px rgba(34,78,118,.05);
+}
+.popular button:nth-of-type(3n+1){background:#eef6ff}
+.popular button:nth-of-type(3n+2){background:#edfaf6}
+.popular button:nth-of-type(3n){background:#fff8e7}
+
+.tabs button{font-size:18px}
+.tabs span{font-size:13px}
+.doclabel{font-size:15px}
+select{font-size:15px;padding:9px 11px}
+.results-head h2{font-size:22px;color:#214d73}
+.results-head span{font-size:14px}
+
+.cards{gap:20px}
+.card{
+  border-radius:16px;
+  border-color:#d4e2ee;
+  padding:26px;
+  min-height:228px;
+  box-shadow:0 7px 22px rgba(31,76,119,.07);
+  background:rgba(255,255,255,.95);
+}
+.card:nth-child(6n+1){background:linear-gradient(145deg,#ffffff 58%,#edf7ff 100%)}
+.card:nth-child(6n+2){background:linear-gradient(145deg,#ffffff 58%,#eefaf6 100%)}
+.card:nth-child(6n+3){background:linear-gradient(145deg,#ffffff 58%,#fff8e8 100%)}
+.card:nth-child(6n+4){background:linear-gradient(145deg,#ffffff 58%,#f4f0ff 100%)}
+.card:nth-child(6n+5){background:linear-gradient(145deg,#ffffff 58%,#eef9fb 100%)}
+.card:nth-child(6n){background:linear-gradient(145deg,#ffffff 58%,#fff1f3 100%)}
+.card:hover{
+  transform:translateY(-2px);
+  border-color:#8db9df;
+  box-shadow:0 12px 28px rgba(31,76,119,.13);
+}
+.card.featured{border-top:4px solid var(--blue)}
+.cardtop{font-size:13px}
+.cardtop .tag,.cardtop .priority{font-size:13px}
+.card h3{font-size:22px;line-height:1.55;margin:15px 0 10px}
+.card p{font-size:17px;line-height:1.8;color:#526a82}
+.cardbottom{font-size:13px}
+.cardbottom b{font-size:20px}
+.fulltext .card h3{font-size:21px}
+.fulltext .card p{font-size:17px}
+.empty{font-size:16px}
+.empty b{font-size:21px}
+.more{font-size:16px;padding:11px 20px}
+footer{font-size:14px;color:#687d91}
+
+/* detail / teaching dialogs */
+dialog{border-radius:18px}
+.dialog-head{font-size:16px;background:linear-gradient(90deg,#f1f7ff,#f1fbf8)}
+#detailBody h2{font-size:30px}
+#detailBody .lead{font-size:18px;background:linear-gradient(90deg,#edf5ff,#f1fbf7)}
+#detailBody li{font-size:17px}
+.note{font-size:16px;background:#fff5d9}
+.sourcetitle,.sources button{font-size:15px}
+.reader-note{font-size:15px}
+.reader-toolbar,.pager{font-size:15px}
+.reader-toolbar a,.reader-tabs button{font-size:15px}
+.reader-tabs span{font-size:14px}
+
+/* illustration / lesson areas inherit a friendlier surface */
+.card-visual{background:linear-gradient(145deg,#edf7ff,#edf9f5)}
+
+@media(max-width:1050px){
+  h1{font-size:34px}
+  .card h3{font-size:21px}
+  .card p{font-size:16px}
+}
+
+@media(max-width:760px){
+  :root{font-size:17px}
+  header{background:linear-gradient(120deg,#103252,#1767b5 72%,#2a91d8)}
+  .brand{font-size:23px}
+  .brand small{font-size:12px}
+  .outline{font-size:14px}
+  aside{background:rgba(248,252,255,.97)}
+  nav button{font-size:15px;padding:10px 13px}
+  main{padding:27px 17px 94px}
+  h1{font-size:31px;margin:8px 0}
+  .intro p{font-size:16px;line-height:1.7}
+  .intro .eyebrow{font-size:12px}
+  .searchbox{min-height:62px;border-radius:13px}
+  .searchbox input{font-size:17px;padding:17px 0}
+  .popular{font-size:14px}
+  .popular button{font-size:14px;padding:8px 11px}
+  .tabs button{font-size:16px}
+  .doclabel{font-size:14px}
+  .results-head h2{font-size:20px}
+  .card{padding:22px;min-height:205px;border-radius:15px}
+  .card h3{font-size:21px}
+  .card p{font-size:17px;line-height:1.78}
+  .cardtop{font-size:13px}
+  .cardbottom{font-size:13px}
+  #detailBody h2{font-size:26px}
+  #detailBody .lead{font-size:17px}
+  #detailBody li{font-size:17px}
+  footer{font-size:13px}
+}

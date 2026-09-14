@@ -1,0 +1,30 @@
+/* CAVIRA image repair + single-image layout */
+.card-visual{
+  height:auto!important;
+  aspect-ratio:3/2;
+  background:linear-gradient(135deg,#eaf6ff,#f7fbff)!important;
+  border:1px solid #d8e6f1;
+  overflow:hidden;
+}
+.card-visual img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 52%!important;
+  display:block;
+  image-rendering:auto;
+}
+
+/* Keep the larger lesson scene clean and stable too. */
+.topic-scene img,.lesson-scene img,.scene-visual img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  image-rendering:auto;
+}
+
+@media(max-width:760px){
+  .card-visual{aspect-ratio:16/10}
+}

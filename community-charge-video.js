@@ -22,7 +22,7 @@
   window.CAVIRA_COMMUNITY_META=window.CAVIRA_COMMUNITY_META||{};
   window.CAVIRA_COMMUNITY_META[id]={
     level:'車友實車影片',
-    tone:'amber',
+    tone:'yellow',
     status:'已收錄實車排除案例；安全流程以官方手冊為準',
     checked:'2026-09-14',
     sources:[{

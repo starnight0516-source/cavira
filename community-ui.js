@@ -2,7 +2,8 @@
 (()=>{
   const meta=window.CAVIRA_COMMUNITY_META||{};
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const OFFICIAL_CAVIRA_IMAGE='assets/cavira-official.webp';
+  /* Scheme A: use FOXTRON's official CAVIRA launch image for every category illustration. */
+  const OFFICIAL_CAVIRA_IMAGE='https://www-assets.cloud.foxtronev.com/images/home/news/cavira-launch-event-card-desktop.webp?v=20260914';
 
   if(typeof icons!=='undefined' && typeof CATEGORIES!=='undefined'){
     while(icons.length<CATEGORIES.length) icons.push(icons.length===CATEGORIES.length-1?'🛠':'•');
@@ -81,7 +82,7 @@
     });
   }
 
-  /* Scheme A: every category illustration uses the same official CAVIRA image supplied by the site owner. */
+  /* Scheme A: every category illustration uses the same official CAVIRA image. */
   if(typeof scenes!=='undefined'){
     Object.values(scenes).forEach(scene=>{
       if(scene&&typeof scene==='object'){
